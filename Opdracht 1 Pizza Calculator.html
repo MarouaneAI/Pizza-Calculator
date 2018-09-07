@@ -1,0 +1,48 @@
+<html>
+	<body>
+		<script>
+
+			//Marouane Ahari
+			//Applicatieontwikkelaar
+
+			var SMALL 	= parseInt(prompt('Hoeveel Small pizzas wilt u hebben? €5.99,-' 	, 0));			//Vraagt je hoeveel pizzas je wilt doormiddel van een prompt.
+			var MEDIUM 	= parseInt(prompt('Hoeveel Medium pizzas wilt u hebben? €7.99,-' 	, 0));			//Vraagt je hoeveel pizzas je wilt doormiddel van een prompt.
+			var LARGE 	= parseInt(prompt('Hoeveel Large pizzas wilt u hebben? €10.99,-' 	, 0));			//Vraagt je hoeveel pizzas je wilt doormiddel van een prompt.
+
+			const a = SMALL 	* 5.99;																		//Rekent het bedrag uit voor de pizzas.
+			const b = MEDIUM 	* 7.99;																		//Rekent het bedrag uit voor de pizzas.
+			const c = LARGE 	* 10.99;																	//Rekent het bedrag uit voor de pizzas.
+			
+			var d = SMALL * 5.99 + MEDIUM * 7.99 + LARGE * 10.99;											//Rekent het totaal bedrag uit voor de pizzas.
+
+			d = Number(d).toFixed(2);																		//Zorgt dat het bedrag afgerond word op 2 decimalen.
+
+			if (SMALL > 0) {
+				
+				document.write (SMALL + ' Small pizzas €' + a + ',-' + "<br>");								//Zorgt dat het bedrag op beeld komt (als je wat besteld hebt)
+			}
+			
+			else {
+			}
+
+			if (MEDIUM > 0) {
+				
+				document.write (MEDIUM + ' Medium pizzas €' + b + ',-' + "<br>");							//Zorgt dat het bedrag op beeld komt (als je wat besteld hebt)
+			}
+			
+			else {
+			}
+
+			if (LARGE > 0) {
+				
+				document.write (LARGE + ' Large pizzas €' + c + ',-' + "<br>");								//Zorgt dat het bedrag op beeld komt (als je wat besteld hebt)
+			}
+			
+			else {
+			}
+
+			document.write ("<br>" + ' Totaal = €' + d + ',-' +  "<br>");									//Zorgt dat het totaal bedrag op beeld komt (als je wat besteld hebt)
+
+		</script>
+	</body>
+</html>
